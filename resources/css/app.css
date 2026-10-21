@@ -803,14 +803,30 @@ textarea.form-field { resize: vertical; min-height: 100px; }
     animation: successFadeUp 380ms cubic-bezier(0.23,1,0.32,1) 280ms both;
 }
 .form-success-details {
-    margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
-    width: 100%; display: flex; flex-direction: column; gap: .625rem;
+    margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.2);
+    width: 100%; display: flex; flex-direction: column; gap: .75rem; align-items: center;
     animation: successFadeUp 380ms cubic-bezier(0.23,1,0.32,1) 360ms both;
 }
 .form-success-detail {
-    display: flex; align-items: center; gap: .625rem; font-size: .8125rem; color: var(--ink-mid);
+    display: flex; align-items: center; gap: .625rem; font-size: .8125rem;
+    color: rgba(255,255,255,.8);
 }
-.form-success-detail svg { color: var(--green); flex-shrink: 0; }
+.form-success-detail svg { color: rgba(255,255,255,.9); flex-shrink: 0; }
+.form-success-detail strong { color: #fff; }
+
+/* Tarjeta verde al enviar */
+.contact-form-card.success {
+    background: var(--green);
+    border-color: var(--green);
+    transition: background 400ms cubic-bezier(0.23,1,0.32,1), border-color 400ms ease;
+}
+.contact-form-card.success .form-success h3 { color: #fff; }
+.contact-form-card.success .form-success p { color: rgba(255,255,255,.8); }
+.contact-form-card.success .form-success-check {
+    background: rgba(255,255,255,.2);
+}
+.contact-form-card.success .form-success-check svg { stroke: #fff; }
+.contact-form-card.success .form-success-details { border-top-color: rgba(255,255,255,.25); }
 @media (prefers-reduced-motion: reduce) {
     .form-success.show, .form-success-check, .form-success-check svg,
     .form-success h3, .form-success p, .form-success-details { animation: none; }

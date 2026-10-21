@@ -95,7 +95,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (res.ok) {
                 wrap.style.transition = 'opacity 250ms ease';
                 wrap.style.opacity = '0';
-                setTimeout(() => { wrap.hidden = true; success.classList.add('show'); }, 260);
+                setTimeout(() => {
+                    wrap.hidden = true;
+                    success.classList.add('show');
+                    form.closest('.contact-form-card')?.classList.add('success');
+                }, 260);
             } else {
                 const data = await res.json().catch(() => ({}));
                 alert(data.message ?? 'Ocurrió un error. Por favor intenta de nuevo.');
