@@ -135,8 +135,8 @@
   <div class="section-inner" data-reveal-block>
     <div class="stats-grid">
       <div class="reveal" style="padding:1.5rem 1rem;background:rgba(255,255,255,.06);border-radius:var(--r);border:1px solid rgba(255,255,255,.1)">
-        <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:#fff;line-height:1;letter-spacing:-.04em">5+</div>
-        <div style="font-size:.875rem;font-weight:500;color:rgba(255,255,255,.65);margin-top:.5rem;line-height:1.4">Años de experiencia en asesoría</div>
+        <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:#fff;line-height:1;letter-spacing:-.04em">30+</div>
+        <div style="font-size:.875rem;font-weight:500;color:rgba(255,255,255,.65);margin-top:.5rem;line-height:1.4">Años de experiencia en pensiones IMSS</div>
       </div>
       <div class="reveal" style="padding:1.5rem 1rem;background:rgba(255,255,255,.06);border-radius:var(--r);border:1px solid rgba(255,255,255,.1)">
         <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:var(--gold);line-height:1;letter-spacing:-.04em">2</div>
