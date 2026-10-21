@@ -59,7 +59,7 @@
         Decide con <span>certeza.</span>
       </h1>
       <p class="hero-sub">
-        Orientación personalizada sobre IMSS, ISSSTE y AFORE para que sepas exactamente cuánto te corresponde y cuándo — antes de dar cualquier paso.
+        Orientación personalizada sobre pensiones del IMSS para que sepas exactamente cuánto te corresponde y cuándo — antes de dar cualquier paso.
       </p>
       <div class="hero-actions">
         <a href="#contacto" class="btn btn-white btn-lg">Solicitar orientación</a>
@@ -68,15 +68,15 @@
       <div class="hero-stats">
         <div>
           <div class="hero-stat-val">IMSS</div>
-          <div class="hero-stat-label">Ley 73 · Ley 97</div>
+          <div class="hero-stat-label">Especialistas en pensiones</div>
         </div>
         <div>
-          <div class="hero-stat-val">ISSSTE</div>
-          <div class="hero-stat-label">Sector público</div>
+          <div class="hero-stat-val">Ley 73</div>
+          <div class="hero-stat-label">Régimen anterior al 97</div>
         </div>
         <div>
-          <div class="hero-stat-val">AFORE</div>
-          <div class="hero-stat-label">Cuenta individual</div>
+          <div class="hero-stat-val">Ley 97</div>
+          <div class="hero-stat-label">Régimen actual</div>
         </div>
       </div>
     </div>
@@ -139,8 +139,8 @@
         <div style="font-size:.875rem;font-weight:500;color:rgba(255,255,255,.65);margin-top:.5rem;line-height:1.4">Años de experiencia en asesoría</div>
       </div>
       <div class="reveal" style="padding:1.5rem 1rem;background:rgba(255,255,255,.06);border-radius:var(--r);border:1px solid rgba(255,255,255,.1)">
-        <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:var(--gold);line-height:1;letter-spacing:-.04em">3</div>
-        <div style="font-size:.875rem;font-weight:500;color:rgba(255,255,255,.65);margin-top:.5rem;line-height:1.4">Sistemas cubiertos: IMSS, ISSSTE, AFORE</div>
+        <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:var(--gold);line-height:1;letter-spacing:-.04em">2</div>
+        <div style="font-size:.875rem;font-weight:500;color:rgba(255,255,255,.65);margin-top:.5rem;line-height:1.4">Leyes que manejamos: Ley 73 y Ley 97</div>
       </div>
       <div class="reveal" style="padding:1.5rem 1rem;background:rgba(255,255,255,.06);border-radius:var(--r);border:1px solid rgba(255,255,255,.1)">
         <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:#fff;line-height:1;letter-spacing:-.04em">100%</div>
@@ -214,16 +214,12 @@
       $servicios = [
       ['icon'=>'M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 7a4 4 0 100 8 4 4 0 000-8zM22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75',
       't'=>'Orientación IMSS','d'=>'Revisamos tu historial de cotización y te explicamos la diferencia entre Ley 73 y Ley 97 y cuál te conviene en tu caso específico.'],
-      ['icon'=>'M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3',
-      't'=>'Orientación ISSSTE','d'=>'Para trabajadores del sector público: revisamos años de servicio y diferencias entre el esquema de reparto y PENSIONISSSTE.'],
-      ['icon'=>'M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z',
-      't'=>'Análisis de AFORE','d'=>'Revisamos saldo, rendimientos históricos y las modalidades de retiro disponibles para ayudarte a elegir la mejor opción.'],
       ['icon'=>'M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z',
       't'=>'Revisión de expediente','d'=>'Identificamos inconsistencias, semanas no registradas y posibilidades de recuperarlas antes de iniciar el trámite oficial.'],
       ['icon'=>'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z',
-      't'=>'Planeación anticipada','d'=>'Si aún no llegas a la edad de retiro, diseñamos una estrategia para maximizar tu pensión futura con las opciones disponibles.'],
+      't'=>'Planeación anticipada','d'=>'Si aún no llegas a la edad de retiro, diseñamos una estrategia para maximizar tu pensión futura con las opciones del IMSS.'],
       ['icon'=>'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
-      't'=>'Acompañamiento en trámite','d'=>'Te acompañamos en cada paso del proceso para que todo salga correctamente y en el momento adecuado.'],
+      't'=>'Acompañamiento en trámite','d'=>'Te acompañamos en cada paso del proceso ante el IMSS para que todo salga correctamente y en el momento adecuado.'],
       ];
       @endphp
       @foreach($servicios as $s)
@@ -254,7 +250,7 @@
       @php
       $pasos = [
       ['n'=>'1','t'=>'Primer contacto','d'=>'Nos escribes o llamas. Una plática inicial para conocer tu situación y ver cómo podemos ayudarte.'],
-      ['n'=>'2','t'=>'Revisión de tu caso','d'=>'Analizamos tu historial, documentos y AFORE para entender exactamente en qué punto estás y qué opciones tienes.'],
+      ['n'=>'2','t'=>'Revisión de tu caso','d'=>'Analizamos tu historial de cotización y documentos para entender exactamente en qué punto estás y qué opciones tienes en el IMSS.'],
       ['n'=>'3','t'=>'Orientación clara','d'=>'Te presentamos tus opciones en lenguaje directo: cuánto recibirás, cuándo y bajo qué condiciones.'],
       ['n'=>'4','t'=>'Acompañamiento','d'=>'Si decides avanzar, te acompañamos en el trámite para que cada paso salga bien y en el momento correcto.'],
       ];
@@ -355,7 +351,7 @@
       ['q'=>'¿Puedo tramitar mi pensión si tengo semanas faltantes o inconsistencias?',
       'a'=>'Existen mecanismos para acreditar semanas faltantes y en algunos casos es posible recuperar períodos no registrados. Evaluamos tu situación específica para encontrar las opciones disponibles.'],
       ['q'=>'¿Pensión Plena tramita la pensión por mí?',
-      'a'=>'Nos especializamos en orientación y asesoría. Te explicamos el proceso, revisamos tu documentación y te acompañamos en cada paso. El trámite formal se realiza con el IMSS, ISSSTE o AFORE correspondiente.'],
+      'a'=>'Nos especializamos en orientación y asesoría sobre pensiones del IMSS. Te explicamos el proceso, revisamos tu documentación y te acompañamos en cada paso. El trámite formal se realiza directamente ante el IMSS.'],
       ['q'=>'¿Cuánto cuesta la asesoría?',
       'a'=>'Antes de cualquier acuerdo te explicamos con claridad qué incluye cada servicio y cuánto cuesta. No hay costos ocultos ni compromisos que no hayas aceptado.'],
       ];
@@ -410,87 +406,85 @@
                 <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
               </svg>
             </div>
-            <div><strong>Ubicación</strong></div>
-          </div>
-        </div>
-
-        {{-- Foto de oficina --}}
-        <div class="office-photo-wrap reveal" data-reveal-block>
-          @if(file_exists(public_path('images/oficina.jpg')))
-          <img src="{{ asset('images/oficina.jpg') }}" alt="Oficinas Pensión Plena en Lagos de Moreno" class="office-photo-img">
-          @else
-          <div class="office-photo-placeholder">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--green-400)" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
-              <path d="M2.25 21h19.5M3.75 3h16.5M3.75 3v18M20.25 3v18M9 6.75h1.5m3 0H15M9 12h1.5m3 0H15M9 17.25h6M6.75 21v-3.375A2.625 2.625 0 019.375 15h5.25A2.625 2.625 0 0117.25 17.625V21" />
-            </svg>
-            <span>Foto de oficinas — próximamente</span>
-          </div>
-          @endif
-          <div class="office-photo-legend">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.8" stroke-linecap="round" flex-shrink="0" aria-hidden="true">
-              <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-            </svg>
-            <div>
-              <strong>Ven a visitarnos</strong>
-              <span>Ignacio López Rayón 891 · El Refugio · Lagos de Moreno</span>
+            <div><strong>Ubicación</strong><span>Ignacio López Rayón 891, El Refugio, 47470 Lagos de Moreno, Jal.</span></div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div data-reveal-block>
-        <div class="contact-form-card reveal">
-          <div id="form-wrap">
-            <h3>Envía tu consulta</h3>
-            <form id="contact-form" novalidate>
-              <div class="form-group">
-                <label class="form-label" for="nombre">Nombre completo <span style="color:#D32F2F">*</span></label>
-                <input class="form-field" type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
-                <p class="form-error">Tu nombre es requerido</p>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="contacto-val">Teléfono o correo <span style="color:#D32F2F">*</span></label>
-                <input class="form-field" type="text" id="contacto-val" name="contacto" placeholder="477 000 0000 o correo@ejemplo.com" required>
-                <p class="form-error">Tu teléfono o correo es requerido</p>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="tema">¿Sobre qué necesitas orientación?</label>
-                <select class="form-field" id="tema" name="tema">
-                  <option value="">Selecciona una opción</option>
-                  <option value="imss">Pensión IMSS</option>
-                  <option value="issste">Pensión ISSSTE</option>
-                  <option value="afore">AFORE y retiro</option>
-                  <option value="expediente">Revisión de expediente</option>
-                  <option value="planeacion">Planeación de retiro</option>
-                  <option value="otro">Otro</option>
-                </select>
-              </div>
-              <div class="form-group form-group-grow">
-                <label class="form-label" for="mensaje">Cuéntanos tu situación <span style="color:#D32F2F">*</span></label>
-                <textarea class="form-field" id="mensaje" name="mensaje" rows="3" placeholder="Ej: Cotizo en IMSS desde 1988 y quiero saber cuánto recibiré..." required></textarea>
-                <p class="form-error">Por favor cuéntanos tu situación</p>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem">
-                Enviar consulta
-              </button>
-              <p style="font-size:.8125rem;color:var(--ink-soft);margin-top:.875rem;text-align:center">
-                Al enviar aceptas nuestra <a href="{{ route('privacidad') }}" style="color:var(--green)">política de privacidad</a>.
-              </p>
-            </form>
-          </div>
-          <div id="form-success" class="form-success">
-            <div class="form-success-check">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" aria-hidden="true">
-                <path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          {{-- Foto de oficina --}}
+          <div class="office-photo-wrap reveal" data-reveal-block>
+            @if(file_exists(public_path('images/oficina.jpg')))
+            <img src="{{ asset('images/oficina.jpg') }}" alt="Oficinas Pensión Plena en Lagos de Moreno" class="office-photo-img">
+            @else
+            <div class="office-photo-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--green-400)" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+                <path d="M2.25 21h19.5M3.75 3h16.5M3.75 3v18M20.25 3v18M9 6.75h1.5m3 0H15M9 12h1.5m3 0H15M9 17.25h6M6.75 21v-3.375A2.625 2.625 0 019.375 15h5.25A2.625 2.625 0 0117.25 17.625V21" />
               </svg>
+              <span>Foto de oficinas — próximamente</span>
             </div>
-            <h3>¡Mensaje recibido!</h3>
-            <p>Nos pondremos en contacto a la brevedad para agendar tu orientación.</p>
+            @endif
+            <div class="office-photo-legend">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.8" stroke-linecap="round" flex-shrink="0" aria-hidden="true">
+                <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              <div>
+                <strong>Ven a visitarnos</strong>
+                <span>Ignacio López Rayón 891 · El Refugio · Lagos de Moreno</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal-block>
+          <div class="contact-form-card reveal">
+            <div id="form-wrap">
+              <h3>Envía tu consulta</h3>
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label class="form-label" for="nombre">Nombre completo <span style="color:#D32F2F">*</span></label>
+                  <input class="form-field" type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+                  <p class="form-error">Tu nombre es requerido</p>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contacto-val">Teléfono o correo <span style="color:#D32F2F">*</span></label>
+                  <input class="form-field" type="text" id="contacto-val" name="contacto" placeholder="477 000 0000 o correo@ejemplo.com" required>
+                  <p class="form-error">Tu teléfono o correo es requerido</p>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="tema">¿Sobre qué necesitas orientación?</label>
+                  <select class="form-field" id="tema" name="tema">
+                    <option value="">Selecciona una opción</option>
+                    <option value="imss">Pensión IMSS</option>
+                    <option value="expediente">Revisión de expediente</option>
+                    <option value="planeacion">Planeación de retiro</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div class="form-group form-group-grow">
+                  <label class="form-label" for="mensaje">Cuéntanos tu situación <span style="color:#D32F2F">*</span></label>
+                  <textarea class="form-field" id="mensaje" name="mensaje" rows="3" placeholder="Ej: Cotizo en IMSS desde 1988 y quiero saber cuánto recibiré..." required></textarea>
+                  <p class="form-error">Por favor cuéntanos tu situación</p>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem">
+                  Enviar consulta
+                </button>
+                <p style="font-size:.8125rem;color:var(--ink-soft);margin-top:.875rem;text-align:center">
+                  Al enviar aceptas nuestra <a href="{{ route('privacidad') }}" style="color:var(--green)">política de privacidad</a>.
+                </p>
+              </form>
+            </div>
+            <div id="form-success" class="form-success">
+              <div class="form-success-check">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" aria-hidden="true">
+                  <path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3>¡Mensaje recibido!</h3>
+              <p>Nos pondremos en contacto a la brevedad para agendar tu orientación.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 
@@ -506,10 +500,9 @@
       <p class="footer-col-title">Servicios</p>
       <ul class="footer-links">
         <li><a href="#servicios">Orientación IMSS</a></li>
-        <li><a href="#servicios">Orientación ISSSTE</a></li>
-        <li><a href="#servicios">Análisis de AFORE</a></li>
         <li><a href="#servicios">Revisión de expediente</a></li>
         <li><a href="#servicios">Planeación anticipada</a></li>
+        <li><a href="#servicios">Acompañamiento en trámite</a></li>
       </ul>
     </div>
     <div>
