@@ -472,14 +472,28 @@
                 </p>
               </form>
             </div>
-            <div id="form-success" class="form-success">
+            <div id="form-success" class="form-success" role="alert" aria-live="polite">
               <div class="form-success-check">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3>¡Mensaje recibido!</h3>
-              <p>Nos pondremos en contacto a la brevedad para agendar tu orientación.</p>
+              <p>Nos pondremos en contacto a la brevedad para agendar tu orientación personalizada.</p>
+              <div class="form-success-details">
+                <div class="form-success-detail">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
+                  Tiempo de respuesta: mismo día o siguiente hábil
+                </div>
+                <div class="form-success-detail">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                  También puedes llamarnos: <strong style="color:var(--ink)">474 148 0377</strong>
+                </div>
+                <div class="form-success-detail">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                  Ignacio López Rayón 891, Lagos de Moreno
+                </div>
+              </div>
             </div>
           </div>
         </div>
