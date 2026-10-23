@@ -13,10 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const drawer    = document.getElementById('mobile-drawer');
     const closeBtn  = document.getElementById('drawer-close');
 
-    const open  = () => { drawer?.classList.add('open');    toggle?.setAttribute('aria-expanded','true');  document.body.style.overflow='hidden'; };
-    const close = () => { drawer?.classList.remove('open'); toggle?.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
+    const open  = () => {
+        drawer?.classList.add('open');
+        toggle?.setAttribute('aria-expanded','true');
+        toggle?.setAttribute('aria-label','Cerrar menú');
+        nav?.classList.remove('scrolled');
+        document.body.style.overflow='hidden';
+    };
+    const close = () => {
+        drawer?.classList.remove('open');
+        toggle?.setAttribute('aria-expanded','false');
+        toggle?.setAttribute('aria-label','Abrir menú');
+        document.body.style.overflow='';
+        tick();
+    };
 
-    toggle?.addEventListener('click', open);
+    toggle?.addEventListener('click', () => drawer?.classList.contains('open') ? close() : open());
     closeBtn?.addEventListener('click', close);
     drawer?.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
 
