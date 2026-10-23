@@ -92,16 +92,24 @@
       </span>
     </a>
 
-    <figure id="hero-card" class="hero-photo" aria-label="Nuestra oficina en Lagos de Moreno">
-      <img src="{{ asset('images/oficina.jpg') }}"
-        alt="Oficina de Pensión Plena en Ignacio López Rayón 891, Lagos de Moreno"
-        class="hero-photo-img">
-      <div class="hero-photo-badge">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-          <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-        </svg>
-        <span>Ignacio López Rayón 891 · Lagos de Moreno</span>
-      </div>
+    <figure id="hero-card" class="hero-photo">
+      <a class="hero-photo-link"
+        href="https://www.google.com/maps/search/?api=1&amp;query=Ignacio+L%C3%B3pez+Ray%C3%B3n+891%2C+El+Refugio%2C+47470+Lagos+de+Moreno%2C+Jal."
+        target="_blank" rel="noopener"
+        aria-label="Ver la ubicación de Pensión Plena en Google Maps (se abre en una pestaña nueva)">
+        <img src="{{ asset('images/oficina.jpg') }}"
+          alt="Oficina de Pensión Plena en Ignacio López Rayón 891, Lagos de Moreno"
+          class="hero-photo-img">
+        <span class="hero-photo-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+          <span class="hero-photo-addr">Ignacio López Rayón 891 · Lagos de Moreno</span>
+          <span class="hero-photo-go">Cómo llegar
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </span>
+      </a>
     </figure>
     </div>
   </div>
