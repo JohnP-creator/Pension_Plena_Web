@@ -59,7 +59,7 @@
         Decide con <span>certeza.</span>
       </h1>
       <p class="hero-sub">
-        Orientación personalizada sobre pensiones del IMSS para que sepas exactamente cuánto te corresponde y cuándo — antes de dar cualquier paso.
+        Orientación personalizada sobre pensiones del IMSS para que sepas exactamente cuánto te corresponde y como puedes maximizar tu pensión.
       </p>
       <div class="hero-actions">
         <a href="#contacto" class="btn btn-white btn-lg">Solicitar orientación</a>
@@ -71,44 +71,39 @@
           <div class="hero-stat-label">Especialistas en pensiones</div>
         </div>
         <div>
-          <div class="hero-stat-val">Ley 73</div>
-          <div class="hero-stat-label">Régimen anterior al 97</div>
+          <div class="hero-stat-val">Modalidad 40</div>
+          <div class="hero-stat-label"></div>
         </div>
         <div>
-          <div class="hero-stat-val">Ley 97</div>
-          <div class="hero-stat-label">Régimen actual</div>
+          <div class="hero-stat-val">Trabajadores Independientes</div>
+          <div class="hero-stat-label"></div>
         </div>
       </div>
     </div>
 
-    {{-- ── Foto de servicios (reemplaza con: public/images/hero-servicios.jpg) ── --}}
-    <figure id="hero-card" class="hero-photo" aria-label="Nuestros servicios">
-      {{-- Si existe la foto real, se muestra; si no, el placeholder CSS --}}
-      @if(file_exists(public_path('images/hero-servicios.jpg')))
-      <img src="{{ asset('images/hero-servicios.jpg') }}"
-        alt="Asesoría personalizada en Pensión Plena"
+    <div class="hero-aside">
+    <a href="tel:+524741480377" class="hero-phone" aria-label="Llámanos al 474 148 0377">
+      <span class="hero-phone-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+      </span>
+      <span>
+        <span class="hero-phone-label">¿Tienes dudas? Llámanos</span>
+        <span class="hero-phone-num">474 148 0377</span>
+      </span>
+    </a>
+
+    <figure id="hero-card" class="hero-photo" aria-label="Nuestra oficina en Lagos de Moreno">
+      <img src="{{ asset('images/oficina.jpg') }}"
+        alt="Oficina de Pensión Plena en Ignacio López Rayón 891, Lagos de Moreno"
         class="hero-photo-img">
-      @elseif(file_exists(public_path('images/hero-servicios.png')))
-      <img src="{{ asset('images/hero-servicios.png') }}"
-        alt="Asesoría personalizada en Pensión Plena"
-        class="hero-photo-img">
-      @else
-      <div class="hero-photo-placeholder" aria-hidden="true">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2">
-          <rect x="3" y="3" width="18" height="18" rx="2" />
-          <circle cx="8.5" cy="8.5" r="1.5" />
-          <path d="M21 15l-5-5L5 21" />
-        </svg>
-        <p>Agrega tu foto aquí<br><span>public/images/hero-servicios.jpg</span></p>
-      </div>
-      @endif
       <div class="hero-photo-badge">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
         </svg>
-        Orientación personalizada · Sin compromisos
+        <span>Ignacio López Rayón 891 · Lagos de Moreno</span>
       </div>
     </figure>
+    </div>
   </div>
 </section>
 
@@ -135,12 +130,12 @@
   <div class="section-inner" data-reveal-block>
     <div class="stats-grid">
       <div class="reveal" style="padding:1.5rem 1rem;background:rgba(255,255,255,.06);border-radius:var(--r);border:1px solid rgba(255,255,255,.1)">
-        <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:#fff;line-height:1;letter-spacing:-.04em">30+</div>
+        <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:#fff;line-height:1;letter-spacing:-.04em">30</div>
         <div style="font-size:.875rem;font-weight:500;color:rgba(255,255,255,.65);margin-top:.5rem;line-height:1.4">Años de experiencia en pensiones IMSS</div>
       </div>
       <div class="reveal" style="padding:1.5rem 1rem;background:rgba(255,255,255,.06);border-radius:var(--r);border:1px solid rgba(255,255,255,.1)">
-        <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:var(--gold);line-height:1;letter-spacing:-.04em">2</div>
-        <div style="font-size:.875rem;font-weight:500;color:rgba(255,255,255,.65);margin-top:.5rem;line-height:1.4">Leyes que manejamos: Ley 73 y Ley 97</div>
+        <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:var(--gold);line-height:1;letter-spacing:-.04em">850</div>
+        <div style="font-size:.875rem;font-weight:500;color:rgba(255,255,255,.65);margin-top:.5rem;line-height:1.4">Casos de éxito en pensiones</div>
       </div>
       <div class="reveal" style="padding:1.5rem 1rem;background:rgba(255,255,255,.06);border-radius:var(--r);border:1px solid rgba(255,255,255,.1)">
         <div style="font-family:'Outfit',sans-serif;font-size:clamp(2.25rem,4.5vw,3.5rem);font-weight:800;color:#fff;line-height:1;letter-spacing:-.04em">100%</div>
@@ -407,98 +402,105 @@
               </svg>
             </div>
             <div><strong>Ubicación</strong><span>Ignacio López Rayón 891, El Refugio, 47470 Lagos de Moreno, Jal.</span></div>
-            </div>
-          </div>
-
-          {{-- Foto de oficina --}}
-          <div class="office-photo-wrap reveal" data-reveal-block>
-            @if(file_exists(public_path('images/oficina.jpg')))
-            <img src="{{ asset('images/oficina.jpg') }}" alt="Oficinas Pensión Plena en Lagos de Moreno" class="office-photo-img">
-            @else
-            <div class="office-photo-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--green-400)" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
-                <path d="M2.25 21h19.5M3.75 3h16.5M3.75 3v18M20.25 3v18M9 6.75h1.5m3 0H15M9 12h1.5m3 0H15M9 17.25h6M6.75 21v-3.375A2.625 2.625 0 019.375 15h5.25A2.625 2.625 0 0117.25 17.625V21" />
-              </svg>
-              <span>Foto de oficinas — próximamente</span>
-            </div>
-            @endif
-            <div class="office-photo-legend">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.8" stroke-linecap="round" flex-shrink="0" aria-hidden="true">
-                <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-              <div>
-                <strong>Ven a visitarnos</strong>
-                <span>Ignacio López Rayón 891 · El Refugio · Lagos de Moreno</span>
-              </div>
-            </div>
           </div>
         </div>
 
-        <div data-reveal-block>
-          <div class="contact-form-card reveal">
-            <div id="form-wrap">
-              <h3>Envía tu consulta</h3>
-              <form id="contact-form" novalidate>
-                <div class="form-group">
-                  <label class="form-label" for="nombre">Nombre completo <span style="color:#D32F2F">*</span></label>
-                  <input class="form-field" type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
-                  <p class="form-error">Tu nombre es requerido</p>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="contacto-val">Teléfono o correo <span style="color:#D32F2F">*</span></label>
-                  <input class="form-field" type="text" id="contacto-val" name="contacto" placeholder="477 000 0000 o correo@ejemplo.com" required>
-                  <p class="form-error">Tu teléfono o correo es requerido</p>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="tema">¿Sobre qué necesitas orientación?</label>
-                  <select class="form-field" id="tema" name="tema">
-                    <option value="">Selecciona una opción</option>
-                    <option value="imss">Pensión IMSS</option>
-                    <option value="expediente">Revisión de expediente</option>
-                    <option value="planeacion">Planeación de retiro</option>
-                    <option value="otro">Otro</option>
-                  </select>
-                </div>
-                <div class="form-group form-group-grow">
-                  <label class="form-label" for="mensaje">Cuéntanos tu situación <span style="color:#D32F2F">*</span></label>
-                  <textarea class="form-field" id="mensaje" name="mensaje" rows="3" placeholder="Ej: Cotizo en IMSS desde 1988 y quiero saber cuánto recibiré..." required></textarea>
-                  <p class="form-error">Por favor cuéntanos tu situación</p>
-                </div>
-                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem">
-                  Enviar consulta
-                </button>
-                <p style="font-size:.8125rem;color:var(--ink-soft);margin-top:.875rem;text-align:center">
-                  Al enviar aceptas nuestra <a href="{{ route('privacidad') }}" style="color:var(--green)">política de privacidad</a>.
-                </p>
-              </form>
+        {{-- Foto de oficina --}}
+        <div class="office-photo-wrap reveal" data-reveal-block>
+          @if(file_exists(public_path('images/hero-servicios.jpg')))
+          <img src="{{ asset('images/hero-servicios.jpg') }}" alt="Asesoría personalizada en Pensión Plena" class="office-photo-img">
+          @else
+          <div class="office-photo-placeholder">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--green-400)" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+              <path d="M2.25 21h19.5M3.75 3h16.5M3.75 3v18M20.25 3v18M9 6.75h1.5m3 0H15M9 12h1.5m3 0H15M9 17.25h6M6.75 21v-3.375A2.625 2.625 0 019.375 15h5.25A2.625 2.625 0 0117.25 17.625V21" />
+            </svg>
+            <span>Foto de oficinas — próximamente</span>
+          </div>
+          @endif
+          <div class="office-photo-legend">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="1.8" stroke-linecap="round" flex-shrink="0" aria-hidden="true">
+              <path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div>
+              <strong>Atención personalizada</strong>
+              <span>Revisamos tu caso con calma y te explicamos todo</span>
             </div>
-            <div id="form-success" class="form-success" role="alert" aria-live="polite">
-              <div class="form-success-check">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+          </div>
+        </div>
+      </div>
+
+      <div data-reveal-block>
+        <div class="contact-form-card reveal">
+          <div id="form-wrap">
+            <h3>Envía tu consulta</h3>
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="nombre">Nombre completo <span style="color:#D32F2F">*</span></label>
+                <input class="form-field" type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+                <p class="form-error">Tu nombre es requerido</p>
               </div>
-              <h3>¡Mensaje recibido!</h3>
-              <p>Nos pondremos en contacto a la brevedad para agendar tu orientación personalizada.</p>
-              <div class="form-success-details">
-                <div class="form-success-detail">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
-                  Tiempo de respuesta: mismo día o siguiente hábil
-                </div>
-                <div class="form-success-detail">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-                  También puedes llamarnos: <strong style="color:var(--ink)">474 148 0377</strong>
-                </div>
-                <div class="form-success-detail">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
-                  Ignacio López Rayón 891, Lagos de Moreno
-                </div>
+              <div class="form-group">
+                <label class="form-label" for="contacto-val">Teléfono o correo <span style="color:#D32F2F">*</span></label>
+                <input class="form-field" type="text" id="contacto-val" name="contacto" placeholder="477 000 0000 o correo@ejemplo.com" required>
+                <p class="form-error">Tu teléfono o correo es requerido</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="tema">¿Sobre qué necesitas orientación?</label>
+                <select class="form-field" id="tema" name="tema">
+                  <option value="">Selecciona una opción</option>
+                  <option value="imss">Pensión IMSS</option>
+                  <option value="expediente">Revisión de expediente</option>
+                  <option value="planeacion">Planeación de retiro</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-group form-group-grow">
+                <label class="form-label" for="mensaje">Cuéntanos tu situación <span style="color:#D32F2F">*</span></label>
+                <textarea class="form-field" id="mensaje" name="mensaje" rows="3" placeholder="Ej: Cotizo en IMSS desde 1988 y quiero saber cuánto recibiré..." required></textarea>
+                <p class="form-error">Por favor cuéntanos tu situación</p>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem">
+                Enviar consulta
+              </button>
+              <p style="font-size:.8125rem;color:var(--ink-soft);margin-top:.875rem;text-align:center">
+                Al enviar aceptas nuestra <a href="{{ route('privacidad') }}" style="color:var(--green)">política de privacidad</a>.
+              </p>
+            </form>
+          </div>
+          <div id="form-success" class="form-success" role="alert" aria-live="polite">
+            <div class="form-success-check">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3>¡Mensaje recibido!</h3>
+            <p>Nos pondremos en contacto a la brevedad para agendar tu orientación personalizada.</p>
+            <div class="form-success-details">
+              <div class="form-success-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <path d="M12 6v6l4 2" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                Tiempo de respuesta: mismo día o siguiente hábil
+              </div>
+              <div class="form-success-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+                También puedes llamarnos: <strong style="color:var(--ink)">474 148 0377</strong>
+              </div>
+              <div class="form-success-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0zM19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                Ignacio López Rayón 891, Lagos de Moreno
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
 
 
