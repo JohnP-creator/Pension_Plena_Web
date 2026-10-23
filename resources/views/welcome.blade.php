@@ -94,7 +94,7 @@
 
     <figure id="hero-card" class="hero-photo">
       <a class="hero-photo-link"
-        href="https://www.google.com/maps/search/?api=1&amp;query=Ignacio+L%C3%B3pez+Ray%C3%B3n+891%2C+El+Refugio%2C+47470+Lagos+de+Moreno%2C+Jal."
+        href="https://maps.app.goo.gl/k9jjjWM4yriJFXtUA"
         target="_blank" rel="noopener"
         aria-label="Ver la ubicación de Pensión Plena en Google Maps (se abre en una pestaña nueva)">
         <img src="{{ asset('images/oficina.jpg') }}"
