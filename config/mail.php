@@ -115,4 +115,7 @@ return [
         'name' => env('MAIL_FROM_NAME', env('APP_NAME', 'Laravel')),
     ],
 
+    // Inbox that receives the website's contact form requests.
+    'contact_address' => env('CONTACT_EMAIL', env('MAIL_FROM_ADDRESS')),
+
 ];

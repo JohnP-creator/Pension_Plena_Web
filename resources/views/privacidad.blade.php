@@ -40,7 +40,7 @@
         <p>No vendemos, cedemos ni transferimos tus datos personales a terceros, salvo que sea requerido por autoridad competente conforme a la ley.</p>
 
         <h2 class="font-display text-xl font-semibold text-[#0F2820]">Tus derechos ARCO</h2>
-        <p>Tienes derecho a Acceder, Rectificar, Cancelar u Oponerte al tratamiento de tus datos personales. Para ejercerlos, contáctanos en: <span class="text-[#C09E45] italic text-sm">[correo pendiente]</span>.</p>
+        <p>Tienes derecho a Acceder, Rectificar, Cancelar u Oponerte al tratamiento de tus datos personales. Para ejercerlos, contáctanos en: <a href="mailto:contacto@pensionplena.com.mx" class="text-[#135C47] font-medium">contacto@pensionplena.com.mx</a>.</p>
 
         <h2 class="font-display text-xl font-semibold text-[#0F2820]">Cambios a este aviso</h2>
         <p>Podemos actualizar este aviso. Cualquier cambio se publicará en esta misma página.</p>
